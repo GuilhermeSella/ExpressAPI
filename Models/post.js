@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import { conn } from "../Db/db";
+import { conn } from "../Db/db.js";
 
 
 export const Post = conn.define("Post", {
@@ -16,4 +16,4 @@ export const Post = conn.define("Post", {
     Texto:{ type: DataTypes.TEXT },
 
 
-})
+}, {timestamps:false})
